@@ -55,3 +55,18 @@ img ~ p {
 a:active {
     color: cyan;
 }
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    flex-grow: 4;
+}
+.list {
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    justify-items: center;
+    align-items: start;
+    place-items: center;
+}
