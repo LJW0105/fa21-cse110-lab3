@@ -1,10 +1,13 @@
 /* myStyle.css */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 * {
     font-style: normal;
+    box-sizing: border-box;
 }
 body {
     color: #FFFFFF;
     background-color: rgba(10, 3, 220, 0.2);
+    display: inline;
 }
 p h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -14,22 +17,19 @@ h1 {
     text-align: center;
     font: italic 200% fantasy;
 }
-p {
-    background-color: hsl(180, 50%, 50%);
-    color: #333300;
-    text-align: left;
-    border: 3px groove #FFFF33;
-    font-size: 1em;
-}
 #text.box {
     height: 100px;
     width: 100vw;
     padding: 4ex;
     margin: 5in;
     border: 1pt;
+    position: relative;
+    bottom: 5px;
+    right: 3px;
 }
 #text {
     align-items: start;
+    position: static;
 }
 .questions {
     font-weight: bold;
@@ -69,4 +69,56 @@ ol {
     justify-items: center;
     align-items: start;
     place-items: center;
+}
+@media screen and (max-width: 50rem) and (min-width: 10rem) {
+    div {
+      border: 2px solid blue;
+    }
+}
+p {
+    background-color: hsl(180, 50%, 50%);
+    color: black;
+    text-align: left;
+    border: 3px groove #FFFF33;
+    font-size: 1em;
+    font-family: 'Ephesis', cursive;
+    margin: auto;
+}
+.word {
+    color: cornsilk;
+    text-align: left;
+    text-decoration: wavy;
+}
+#title {
+    text-decoration: underline;
+}
+li {
+    border: 2px solid rgb(255, 0, 212);
+    padding: .5em;
+    display: block;
+    margin-top: 0ex;
+    margin-bottom: 0ex;
+    margin-left: 0ex;
+    margin-right: 0ex;
+}
+.box2 {
+    background-color: darkblue;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+    border-radius: 10px;
+}
+.box3 {
+    display: inline-block;
+    background-color: darkorchid;
+    margin: 10px 10px 10px 10px;
+    padding: 2pt 5pt 10pt 5pt;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
 }
