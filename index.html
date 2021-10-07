@@ -5,9 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
         <link rel="icon" href="https://cdn.pixabay.com/photo/2017/06/10/07/18/list-2389219_1280.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css">
+        <style>
+          h2 {
+            color: blue;
+          }
+          </style>
     </head>
     <body>
-        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h1 style="color: rgb(128, 15, 0);">Pomodoro Timer First Brainstorm</h1>
         <h3>Date: 10/01/2021</h3>
         <header>
           <div>Meeting sections</div>
@@ -26,6 +32,7 @@
             alt="Pomodoro clock"
             width="250"
           />
+          <p>Here is the picture of our workflow</p>
           <h2 id="check-ins">check-ins</h2>
           <ol>
             <li><input type="checkbox" /> Kimberly</li>
@@ -47,13 +54,13 @@
         </main>
         <section>
             <h3>Audio</h3>
-            <audio controls>
+            <audio class="box" controls>
               <source src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Sound_of_dogs%2C_birds_and_crickets_in_early_morning.wav" type="audio/ogg">
             </audio>
         </section>
         <section>
             <h3>Video</h3>
-            <video controls="" autoplay=""><source src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Cat_eating_peas.ogv" type="application/ogg"></video>
+            <video class="box" controls="" autoplay=""><source src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Cat_eating_peas.ogv" type="application/ogg"></video>
         </section>
         <form >
             <fieldset>
@@ -80,9 +87,9 @@
             </fieldset>
         </form>
         <h2>comments</h2>
-        <textarea name="comment" id="4" cols="30" rows="10"></textarea>
+        <textarea name="comment" id="text" cols="30" rows="10"></textarea>
         <br> <br>
-        <label for="programming-language-choice">Choose your favorite programming language:</label>
+        <label class="questions" for="programming-language-choice">Choose your favorite programming language:</label>
         <input list="programming-language-list" id="programming-language-choice" name="programming language choice" />
         <datalist id="programming-language-list">
             <option value="java">
@@ -94,7 +101,7 @@
         
         <br>
 
-        <label for="season-select">Choose your favorite season:</label>
+        <label class="questions" for="season-select">Choose your favorite season:</label>
 
         <select name="seasons" id="season-select">
             <option value="">--Please choose an option--</option>

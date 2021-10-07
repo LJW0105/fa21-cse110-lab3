@@ -1,0 +1,57 @@
+/* myStyle.css */
+* {
+    font-style: normal;
+}
+body {
+    color: #FFFFFF;
+    background-color: rgba(10, 3, 220, 0.2);
+}
+p h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: yellow;
+    text-align: center;
+    font: italic 200% fantasy;
+}
+p {
+    background-color: hsl(180, 50%, 50%);
+    color: #333300;
+    text-align: left;
+    border: 3px groove #FFFF33;
+    font-size: 1em;
+}
+#text.box {
+    height: 100px;
+    width: 100vw;
+    padding: 4ex;
+    margin: 5in;
+    border: 1pt;
+}
+#text {
+    align-items: start;
+}
+.questions {
+    font-weight: bold;
+}
+a[href^="#"] {
+    color: indigo;
+}
+button:hover {
+    color: gray;
+}
+section h3 {
+    text-align: center;
+}
+p > span {
+    background-color: aqua;
+}
+li:first-of-type + li {
+    color: blueviolet;
+}
+img ~ p {
+    color: darkgoldenrod;
+}
+a:active {
+    color: cyan;
+}
